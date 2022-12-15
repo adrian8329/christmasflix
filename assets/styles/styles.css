@@ -1,0 +1,442 @@
+body{
+    font-family: 'Bebas Neue';
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(20, 20, 20);
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar css */
+
+#navbar {
+    z-index: 99999;
+    position: sticky;
+    overflow: hidden;
+    background-image: linear-gradient(rgb(20, 20, 20), rgb(31, 31, 31))
+}
+
+.logo{
+    float: left;
+    height: 30px;
+    margin-left: 60px;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar a:hover {
+    text-decoration: none;
+    color: rgb(218, 0, 0);
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/* video css */
+
+#wrapper{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.homealonetxt h1{
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    font-size: 120px;
+}
+
+.homealonetxt p{
+    position: absolute;
+    top: 350px;
+    left: 60px;
+    font-size: 17px;
+    text-align: left;
+    width: 25%;
+    font-family: Helvetica, sans-serif;
+}
+
+.buttons{
+    position: absolute;
+    top: 500px;
+    left: 60px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.lm{
+    margin-right: 25px;
+    padding: 5px 10px;
+    font-size: 25px;
+    font-family: 'Bebas Neue';
+    background-color: white;
+    border-radius: 3px;
+    border: 0;
+}
+
+.lm:hover{
+    background-color: rgb(218, 218, 218);
+}
+
+.ml{
+    margin-right: 25px;
+    padding: 5px 10px;
+    font-size: 25px;
+    font-family: 'Bebas Neue';
+    background-color: rgb(218, 0, 0);
+    border-radius: 3px;
+    border: 0;
+    color: white;
+}
+
+.ml:hover{
+    background-color: rgb(181, 0, 0);
+}
+
+/* top movies section */
+
+.top{
+    width: 15%;
+    margin: 3vh;
+    transition: transform .2s
+}
+
+.top:hover{
+    transform: scale(1.4);
+    
+}
+
+.top:hover .image{
+    background-color:#000;
+    opacity:0.3;
+}
+
+#top5{
+    margin: 20px 0 100px 0;
+    padding: 0;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image{
+    width: 100%;
+    box-shadow: -3px 6px 4px rgb(8, 8, 8);
+}
+
+.text{
+    transition: .2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding: 1px;
+    margin: 1px;
+}
+
+.text p{
+    font-size: 15px;
+    padding: 1px;
+    margin: 1px;
+}
+
+.top:hover .text{
+    opacity:1;
+}
+
+.toph1{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    margin: 30px 0 0 0;
+}
+
+.more{
+    padding: 0 10px;
+    font-size: 50px;
+    color: white;
+    background-color: rgb(218, 0, 0);
+    border-radius: 3px;
+    border: 0;
+    font-family: 'Bebas Neue';
+}
+
+.more:hover{
+    background-color: rgb(161, 0, 0);
+}
+
+#morediv{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* footer css */
+
+#footer{
+    padding: 10px 0;
+    margin-top: 30px;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.icons{
+    width: 30px;
+    margin: 10px;
+}
+
+.author{
+    position: absolute;
+    bottom: 5px;
+    color: white;
+}
+
+/* movies page */
+
+.toph2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.allmv{
+    font-size: 30px;
+    text-align: center;
+    margin: 0px 0px 70px 0px;
+    color: white;
+}
+
+.mvlist img{
+    width: 100%;
+}
+
+.mvlist{
+    width: 20%;
+    margin: 0px 50px 20px 70px;
+    float: left;
+    clear: both;
+    position: relative;
+}
+
+.mvlist .thmb{
+    box-shadow: -3px 6px 4px rgb(8, 8, 8);
+}
+
+.mvlist:hover .thmb{
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.play{
+    max-width: 20%;
+    transition: .2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding: 1px;
+    margin: 1px;
+}
+
+.mvlist:hover .play{
+    opacity: 0.7;
+}
+
+.mvbtn{
+    margin: 10px 0 20px 0;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: 'Bebas Neue';
+    background-color: rgb(218, 0, 0);
+    border-radius: 3px;
+    border: 0;
+    color: white;
+}
+
+.mvbtn:hover{
+    background-color: rgb(181, 0, 0);
+}
+
+.mvlist2{
+    margin-top: 10px;
+}
+
+.mvlist2 p{
+    width: 70%;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 0px;
+}
+
+.mvlist2 .mva{
+    width: 70%;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.moremv{
+    text-decoration: none;
+    color: rgb(218, 0, 0);
+}
+
+.moremv:hover{
+    color: rgb(181, 0, 0);
+}
+
+.mvlist2 h2{
+    width: 70%;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.mvwhl{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+    padding-left: 200px;
+}
+
+/* mylist */
+
+#footer2{
+    padding: 10px 0;
+    margin-top: 30px;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.container{
+    margin-top: 20px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mymovies{
+    width: 500px;;
+}
+
+.container .task{
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0;
+    box-shadow: -3px 6px 4px rgb(8, 8, 8);
+}
+
+.container .task button{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+    background-color: rgb(218, 0, 0);
+}
+
+.choose{
+    width: 150px;
+    cursor: pointer;
+    margin: 0 20px 20px 20px;
+}
+
+.list{
+    width: 100%;
+    margin: 30px 0;
+    transition: transform .2s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list a:hover .choose{
+    transform: scale(1.4);
+    background-color:#000;
+    opacity:0.5;  
+}
+
+.screen{
+    text-align: center;
+
+}
+
+.screen button{
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+    background-color: rgb(218, 0, 0);
+    border-radius: 3px;
+    border: 0;
+    color: white;
+}
+
+.screen button:hover{
+    background-color: rgb(181, 0, 0);
+}
